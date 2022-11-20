@@ -22,9 +22,23 @@ const multiply = function (array) {
   return total;
 };
 
-const power = function () {};
+const power = function (numb, exp) {
+  return Math.pow(numb, exp);
+};
 
-const factorial = function () {};
+const factorial = function (numb) {
+  let result = numb;
+  if (numb < 0) {
+    return -1;
+  } else if (numb == 0 || numb == 1) {
+    return 1;
+  }
+  while (numb > 1) {
+    numb--;
+    result *= numb;
+  }
+  return result;
+};
 
 // Do not edit below this line
 module.exports = {
